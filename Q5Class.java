@@ -43,7 +43,7 @@ public class Q5Class {
 		
 		total = total + num;
 		count++;
-		System.out.println(total);
+		//System.out.println(total);
 	}
 	
 	// returns total

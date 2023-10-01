@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+//package Assignment6;
 
 /*
  * Author: Team 8
@@ -14,7 +15,7 @@ public class Main {
 		// Get the list
         Q5Class teamList = new Q5Class();
         
-        // Process the list
+        // Processes a list
         teamList.processList(new ArrayList<Integer>(){{
             add(1);
             add(5);
