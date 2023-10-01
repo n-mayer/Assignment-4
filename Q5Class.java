@@ -30,17 +30,7 @@ public class Q5Class {
         }
 		else {
 
-			for(Integer i : myList) {
-
-				if(i > 0) addTotal(i);
-			}
-
-			/*for (int i = 0; i < myList.size(); i++) {
-
-        		int num = myList.get(i);
-
-        		if (num > 0) addTotal(num);
-			}*/
+			for(Integer i : myList) if(i > 0) addTotal(i);
 			setAverage();
 		}
     }
