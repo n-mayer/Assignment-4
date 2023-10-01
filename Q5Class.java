@@ -17,11 +17,14 @@ public class Q5Class {
 	// Constructor
 
 	public Q5Class() {
+
 		myList = new ArrayList<Integer>();
 	}
 
 	// checks if list is empty. If it is not, process each positive element from the list & adds it to total. Count is increased by 1.
-    public void processList() {
+    public void processList(ArrayList<Integer> numbers) {
+
+		myList = numbers;
 
         if (myList.isEmpty()) {
 
@@ -34,14 +37,10 @@ public class Q5Class {
 			setAverage();
 		}
     }
-
-	public void genList(List<Integer> numbers) {
-
-		for (Integer i : numbers) myList.add(i);
-	}
 	
 	// adds num to total
 	private static void addTotal(int num) {
+		
 		total = total + num;
 		count++;
 		System.out.println(total);
@@ -51,7 +50,11 @@ public class Q5Class {
 	public static int getTotal() { return total; }
 	
 	// computes average
-	private static void setAverage() { average = (double)total/count; System.out.println(average);}
+	private static void setAverage() {
+
+		average = (double)total/count;
+		//System.out.println(average);
+	}
 	
 	// returns average
 	public static double getAverage() { return average; }
