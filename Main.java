@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 
-public class Template {
+/*
+ * Author: Team 8
+ * Date: 9/30/2023
+ * Purpose: Create a program the process a list of integers, finds the sum of 
+ * and average of the positive integers in the list.
+ */
+
+public class Main {
     
     public static void main(String[] args) {
 

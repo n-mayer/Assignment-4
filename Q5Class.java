@@ -3,13 +3,6 @@
 
 import java.util.*;
 
-/*
- * Author: Team 8
- * Date: 9/30/2023
- * Purpose: Create a program the process a list of integers, finds the sum of 
- * and average of the positive integers in the list.
- */
-
 public class Q5Class {
 
 	// initialize variables
@@ -37,13 +30,17 @@ public class Q5Class {
         }
 		else {
 
-			System.out.println("Processing...");
-			for (int i = 0; i < myList.size(); i++) {
+			for(Integer i : myList) {
+
+				if(i > 0) addTotal(i);
+			}
+
+			/*for (int i = 0; i < myList.size(); i++) {
 
         		int num = myList.get(i);
 
         		if (num > 0) addTotal(num);
-			}
+			}*/
 			setAverage();
 		}
     }
@@ -57,13 +54,14 @@ public class Q5Class {
 	private static void addTotal(int num) {
 		total = total + num;
 		count++;
+		System.out.println(total);
 	}
 	
 	// returns total
 	public static int getTotal() { return total; }
 	
 	// computes average
-	private static void setAverage() { average = (double)total/count; }
+	private static void setAverage() { average = (double)total/count; System.out.println(average);}
 	
 	// returns average
 	public static double getAverage() { return average; }
