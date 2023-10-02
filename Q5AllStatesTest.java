@@ -1,4 +1,4 @@
-/*
+
 //package Assignment6;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,6 +13,7 @@ class Q5AllStatesTests {
 	 * Author: Team 8
 	 * Date: 9/30/2023
 	 * Purpose: JUnit test cases for a list for Assignment 6
+	 */
 	@Test
 	/*
 	 * ***COPY FROM THE TEST CASE
@@ -21,6 +22,7 @@ class Q5AllStatesTests {
 	 * Test Setup
 	 * Input:
 	 * Expected output:
+	 */
 	void test() 
 	{
 		//Test setup
@@ -33,4 +35,3 @@ class Q5AllStatesTests {
 	}
 
 }
-*/

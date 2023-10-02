@@ -13,16 +13,16 @@ public class Main {
     public static void main(String[] args) {
 
 		// Get the list
-        Q5Class teamList = new Q5Class();
-        
-        // Processes a list
-        teamList.processList(new ArrayList<Integer>(){{
-            add(1);
-            add(5);
-            add(9);
+        Q5Class teamList = new Q5Class(new ArrayList<Integer>(){{
             add(3);
+            add(7);
+            add(6);
+            add(2);
             add(-3);
         }});
+        
+        // Processes a list
+        teamList.processList();
 		
 		System.out.println("The total is " + Q5Class.getTotal() + ", and the average is " + Q5Class.getAverage() + ".");
 	}
