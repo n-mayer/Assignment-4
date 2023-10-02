@@ -1,3 +1,4 @@
+package src;
 //contains main
 //package Assignment6;
 
