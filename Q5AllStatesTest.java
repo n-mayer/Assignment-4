@@ -10,28 +10,29 @@ import org.junit.jupiter.api.Test;
 
 class Q5AllStatesTests {
 	/*
-	 * Author: Team 8
+	 * Author: Nicholas Mayer
 	 * Date: 9/30/2023
 	 * Purpose: JUnit test cases for a list for Assignment 6
 	 */
 	@Test
 	/*
-	 * ***COPY FROM THE TEST CASE
-	 * Test Case ID:
-	 * Purpose:
-	 * Test Setup
-	 * Input:
-	 * Expected output:
+	 * Test Case ID: TotalAvg-SysTest-013 (State Test Case, S2: List Empty)
+	 * Purpose: Test case to cover what should happen if arrayTest starts empty
 	 */
 	void test() 
 	{
 		//Test setup
+		Q5Class teamList = new Q5Class(new ArrayList<Integer>(){{}});
+
 		//Input
-		Q5Class teamList = new Q5Class(Arrays.asList(1, 5, 9, 3, -3));
+		teamList.processList();
+
 		//Expected output
-		assertEquals(18, teamList.getTotal());
-		assertEquals(4.5, teamList.getAverage());
-		
+		assertEquals(18, Q5Class.getTotal());
+		assertEquals(4.5, Q5Class.getAverage());
 	}
 
+	void test2() {
+		
+	}
 }

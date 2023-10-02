@@ -12,6 +12,10 @@ public class Main {
     
     public static void main(String[] args) {
 
+        // Tester setup
+        //Q5AllStatesTests p1 = new Q5AllStatesTests();
+        //Q5AllTransTests p2 = new Q5AllTransTests();
+
 		// Get the list
         Q5Class teamList = new Q5Class(new ArrayList<Integer>(){{
             add(3);
